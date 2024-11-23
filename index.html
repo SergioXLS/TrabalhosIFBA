@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Herança de estilo</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Utilização básica de formulários</h1>
+        <hr>
+        <nav></nav>
+    </header>
+
+    <main class="main">
+
+        <form>
+            <fieldset>
+                <legend id="legenda">Inscrição Academia</legend>
+                <img src="AcademiaColorido.jpeg" alt="Desenho colorido de uma academia" id="academia">
+                <section class="sessão1">
+                    <h2>Dados Pessoais: </h2>
+                    <div class="dadosPessoais">
+                        <span>Digite seu nome: </span>
+                        <input type="text"> <br>
+                        <span>Digite seu CPF: </span>
+                        <input type="text"> <br>
+                        <span>Digite sua data de nascimento: </span>
+                        <input type="date"> <br>
+                        <span>Digite seu telefone: </span>
+                        <input type="tel"> <br>
+                        <span>Digite seu email: </span>
+                        <input type="email"> <br>
+                        <span>Digite seu endereço: </span>
+                        <input type="text"><br>
+                    </div>
+                    <div class="escolhas">
+                        <p>Escolha seu sexo: </p>
+                        <select>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <p>Escolha seu estado civil: </p>
+                        <select>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="casado">Casado</option>
+                            <option value="divorciado">Divorciado</option>
+                            <option value="viúvo">Viúvo</option>
+                        </select>
+                    </div>
+                </section>
+            
+                <section class="sessão2">
+                    <h2 class="h2">Faixa de peso</h2>
+                    <p>Selecione uma faixa de peso: </p>
+                    <div id="pesos">
+                        <span>Até 35kg</span>
+                        <input type="radio" name="peso" id="ate-35kg">
+                        <span>Entre 36kg e 50kg</span>
+                        <input type="radio" name="peso" id="36kg-50kg">
+                        <span>Entre 51kg e 70kg</span>
+                        <input type="radio" name="peso" id="51kg-70kg">
+                        <span>Entre 71kg e 100kg</span>
+                        <input type="radio" name="peso" id="71kg-100kg">
+                        <span>Acima de 100kg</span>
+                        <input type="radio" name="peso" id="+100kg">
+                    </div>
+                </section>
+
+                <section class="sessão3">
+                    <h2 class="h2">disponibilidade</h2>
+                    <p >Quais os seus dias de maior disponibilidade: </p>
+                    <div id="Disponibilidade">
+                        <label><input type="checkbox" name="dias" value="segunda"> Segunda-Feira</label>
+                        <label><input type="checkbox" name="dias" value="terca"> Terça-Feira</label>
+                        <label><input type="checkbox" name="dias" value="quarta"> Quarta-Feira</label>
+                        <label><input type="checkbox" name="dias" value="quinta"> Quinta-Feira</label>
+                        <label><input type="checkbox" name="dias" value="sexta"> Sexta-Feira</label>
+                        <label><input type="checkbox" name="dias" value="sabado"> Sábado</label>
+                        <label><input type="checkbox" name="dias" value="domingo"> Domingo</label>
+                    </div>
+                </section>
+
+            <button type="reset" class="botão">Enviar informações</button>
+
+            </fieldset>
+        </form>
+
+        <aside>
+            <div>
+                <img src="AcademiaP&B.jpeg" alt="Desenho de Academia Preto e branco">
+                <img src="M-PixelArt.jpeg" alt="mulher negra segurando halteres" id="img">
+            </div>
+        </aside>
+
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <img src="IFBA-logo.png" alt="" id="imgFinal">
+        <h3>Desenvolvimento Web - 2024</h>
+        <h4>Allana - Emilly - Sérgio</h4>
+        <h4>Monte Santo - BA</h4>
+    </footer>
+
+</body>
+</html>
