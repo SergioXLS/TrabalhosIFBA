@@ -7,41 +7,75 @@
     <title>Herança de estilo</title>
 </head>
 <body>
+
+    <!-- Início do cabeçalho principal da página -->
     <header class="header">
-        <h1>Utilização básica de formulários</h1>
-        <hr>
-        <nav></nav>
+        <!-- Título principal da página -->
+        <h1 id="tituloPrincipal">Utilização básica de formulários</h1>
+
+        <!-- Navegação principal -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#header">Título</a></li>
+                <li><a href="#main">Preenchimento</a></li>
+                <li><a href="#footer">Rodapé</a></li>
+            </ul>
+        </nav>
     </header>
+    <!-- Fim do cabeçalho principal -->
 
-    <main class="main">
+    <!-- Linha horizontal para separar visualmente o cabeçalho do conteúdo -->
+    <hr>
 
+    <!-- Início da área principal do conteúdo da página -->
+    <main id="main" class="main">
+
+        <!-- Início do formulário -->
         <form>
+            <!-- Fieldset para agrupar os campos relacionados -->
             <fieldset>
+                <!-- Legenda que descreve a função do formulário -->
                 <legend id="legenda">Inscrição Academia</legend>
-                <img src="AcademiaColorido.jpeg" alt="Desenho colorido de uma academia" id="academia">
+
+                <!-- Imagem ilustrativa relacionada ao tema da academia -->
+                <img src="AcademiaColorido.jpeg" alt="Desenho colorido de uma academia" id="desenhoAcademia">
+
+                <!-- Primeira seção do formulário: Dados Pessoais -->
                 <section class="sessão1">
-                    <h2>Dados Pessoais: </h2>
+                <!-- Subtítulo para indicar o grupo de informações -->
+                <h2>Dados Pessoais: </h2>
+                    <!-- Div para organizar os campos de dados pessoais -->
                     <div class="dadosPessoais">
                         <span>Digite seu nome: </span>
                         <input type="text"> <br>
+
                         <span>Digite seu CPF: </span>
                         <input type="text"> <br>
+
                         <span>Digite sua data de nascimento: </span>
                         <input type="date"> <br>
+
                         <span>Digite seu telefone: </span>
                         <input type="tel"> <br>
+
                         <span>Digite seu email: </span>
                         <input type="email"> <br>
+
                         <span>Digite seu endereço: </span>
                         <input type="text"><br>
                     </div>
+
+                    <!-- Div para organizar as escolhas do usuário -->
                     <div class="escolhas">
+                    <!-- Seleção do sexo -->
                         <p>Escolha seu sexo: </p>
                         <select>
                             <option value="masculino">Masculino</option>
                             <option value="feminino">Feminino</option>
                             <option value="outro">Outro</option>
                         </select>
+
+                        <!-- Seleção do estado civil -->
                         <p>Escolha seu estado civil: </p>
                         <select>
                             <option value="solteiro">Solteiro</option>
@@ -51,27 +85,41 @@
                         </select>
                     </div>
                 </section>
-            
+                <!-- Fim da primeira seção: Dados Pessoais -->
+
+                <!-- Início da segunda seção do formulário: Faixa de Peso -->
                 <section class="sessão2">
+                    <!-- Subtítulo indicando o tema da seção -->
                     <h2 class="h2">Faixa de peso</h2>
+                    <!-- Parágrafo explicando a interação nesta seção -->
                     <p>Selecione uma faixa de peso: </p>
+                    <!-- Div para organizar as opções de faixa de peso -->
                     <div id="pesos">
                         <span>Até 35kg</span>
                         <input type="radio" name="peso" id="ate-35kg">
+                        
                         <span>Entre 36kg e 50kg</span>
                         <input type="radio" name="peso" id="36kg-50kg">
+
                         <span>Entre 51kg e 70kg</span>
                         <input type="radio" name="peso" id="51kg-70kg">
+
                         <span>Entre 71kg e 100kg</span>
                         <input type="radio" name="peso" id="71kg-100kg">
+
                         <span>Acima de 100kg</span>
                         <input type="radio" name="peso" id="+100kg">
                     </div>
                 </section>
+                <!-- Fim da segunda seção do formulário -->
 
+                <!-- Início da terceira seção do formulário: Disponibilidade -->
                 <section class="sessão3">
+                    <!-- Subtítulo indicando o tema da seção -->
                     <h2 class="h2">disponibilidade</h2>
+                    <!-- Parágrafo explicando a interação nesta seção -->
                     <p >Quais os seus dias de maior disponibilidade: </p>
+                    <!-- Div para agrupar as opções de dias disponíveis -->
                     <div id="Disponibilidade">
                         <label><input type="checkbox" name="dias" value="segunda"> Segunda-Feira</label>
                         <label><input type="checkbox" name="dias" value="terca"> Terça-Feira</label>
@@ -82,28 +130,52 @@
                         <label><input type="checkbox" name="dias" value="domingo"> Domingo</label>
                     </div>
                 </section>
+                <!-- Fim da seção de disponibilidade -->
 
+                <!-- Início da quarta seção do formulário: Informações Extras -->
+                <section class="sessão4">
+                    <!-- Subtítulo indicando o tema da seção -->
+                    <h2 class="h2">Informações Extras</h2>
+                    <!-- Parágrafo orientando o usuário sobre o campo -->
+                    <p>Se você tiver alguma informação extra, insira no campo abaixo:</p>
+                    <!-- Campo de texto para o usuário inserir informações adicionais -->
+                    <textarea  name="comentarios" rows="10" cols="50" id="comentarios"></textarea>
+                </section>
+                <!-- Fim da quarta seção -->
+
+            <!-- Botão para simular o envio das informações do formulário -->
             <button type="reset" class="botão">Enviar informações</button>
 
             </fieldset>
+            <!-- Fim do agrupamento -->
         </form>
+        <!-- Fim do formulário -->
 
+        <!-- Início da área lateral com imagens relacionadas -->
         <aside>
             <div>
-                <img src="AcademiaP&B.jpeg" alt="Desenho de Academia Preto e branco">
-                <img src="M-PixelArt.jpeg" alt="mulher negra segurando halteres" id="img">
+                <!-- imagem de pessoas malhando preto e branco -->
+                <img src="AcademiaP&B.jpeg" alt="Desenho de pessoas malhando em uma academia Preto e branco">
+                <!-- Imagem de uma mulher negra segurando halteres -->
+                <img src="M-PixelArt.jpeg" alt="mulher negra segurando halteres">
             </div>
         </aside>
+        <!-- Fim da área lateral -->
 
     </main>
+    <!-- Fim da área principal do conteúdo -->
 
-    <footer class="footer">
+    <!-- Início do rodapé da página -->
+    <footer id="footer" class="footer">
+        <!-- Linha horizontal para separar visualmente o rodapé do restante do conteúdo -->
         <hr>
-        <img src="IFBA-logo.png" alt="" id="imgFinal">
+        <!-- imagem da Logotipo do IFBA -->
+        <img src="IFBA-logo.png" alt="logomarca do IFBA - Campus Euclides da Cunha" id="logoIFBA">
         <h3>Desenvolvimento Web - 2024</h>
         <h4>Allana - Emilly - Sérgio</h4>
         <h4>Monte Santo - BA</h4>
     </footer>
+    <!-- Fim do rodapé da página -->
 
 </body>
 </html>

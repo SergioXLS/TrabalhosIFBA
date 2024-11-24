@@ -1,41 +1,80 @@
 body {
-    background-color: whitesmoke;
-    font-size: medium;
-    margin: 5px;
+    background-color: whitesmoke; /* Define a cor de fundo da página */
+    font-size: medium; /* Define o tamanho da fonte */
+    margin: 5px; /* Define uma margem de 5px */
     padding: 1px;
 }
 
 .header {
-    text-align: center;
+    display: flex; /* flexbox para alinhar os itens dentro do header */
+    padding: 10px;
+    position: relative; /* Permite o posicionamento absoluto de elementos dentro do cabeçalho */
+    justify-content: center; /* Alinha o conteúdo horizontalmente ao centro */
+    align-items: center;     /* Alinha o conteúdo verticalmente ao centro */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    line-height: 60%;
+    line-height: 65%; /* Ajusta a altura da linha para 65% do tamanho da fonte */
+}
+
+.nav {
+    position: absolute; /* Posiciona a tag nav de forma absoluta dentro do cabeçalho */
+    right: 0; /* Alinha o menu à direita do cabeçalho */
+    top: 0; /* Alinha o menu ao topo do cabeçalho */
+    line-height: 1.2; /* ajusta a altura da linha como 120% do tamanho */
 }
 
 .main {
-   display: flex;
-   gap: 5px;
-   line-height: 1;
+    display: flex; /*flexbox para organizar os elementos do conteúdo principal */
+    gap: 5px; /* espaçamento de 5px entre os itens do conteúdo principal */
+    line-height: 1; /* Define a altura da linha como 100% do tamanho da fonte */
+}
+
+aside {
+    display: flex; /* flexbox para organizar os itens dentro do aside */
+    flex-direction: column; /* Organiza os itens do aside verticalmente */
+    flex: 1; /* Faz com que o aside ocupe o espaço restante disponível */
+    gap: 2px; /* Define um espaçamento de 2px entre os itens dentro do aside */
+}
+
+/* Estilo das imagens dentro do aside */
+aside img {
+    width: 480px; /* Define a largura da imagem para 480px */
+    border-radius: 5%; /* Aplica bordas arredondadas de 5% às imagens */
 }
 
 form {
-    flex: 2;
-    max-width: 1080px;
+    flex: 2; /* Faz o formulário ocupar duas vezes mais espaço do que o aside */
+    max-width: 1080px; /* Define uma largura máxima de 1080px para o formulário */
 }
 
-#legenda {
-    font-size: 1.6;
-    font-weight: bold;
+.footer {
+    text-align: center; /* Alinha o texto do rodapé ao centro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a fonte */
+    line-height: 0.2; /* Define a altura da linha como 20% do tamanho da fonte */
+}
+
+#logoIFBA {
+    float: left; /* Faz com que a imagem fique à esquerda */
+    max-height: 120px; /* Define a altura máxima do logo para 120px */
 }
 
 .sessão1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#academia {
-    height: auto;
-    max-width: 380px;
-    float: inline-end;
-    border-radius: 5px;
+.sessão2, .sessão3 {
+    line-height: 1;
+}
+
+#legenda {
+    font-size: 1.6; /* Define o tamanho da fonte da legenda como 1.6 vezes o tamanho base */
+    font-weight: bold; /* Deixa a legenda em negrito */
+}
+
+#desenhoAcademia {
+    height: auto; /* Faz a altura da imagem ser ajustada automaticamente */
+    max-width: 380px; /* Define a largura máxima da imagem para 380px */
+    float: inline-end; /* Faz a imagem ficar a direita do texto */
+    border-radius: 5px; /* Aplica bordas arredondadas de 5% à imagem */
 }
 
 .dadosPessoais{
@@ -46,55 +85,22 @@ form {
     line-height: 0.8;
 }
 
-.sessão2, .sessão3 {
-    line-height: 1;
-}
-
 .h2 {
     text-align: center;
 }
 
 #pesos, #disponibilidade {
-    font-size: small;
+    font-size: small; /* Define o tamanho da fonte como pequeno */
 }
 
 .botão {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 2px;
-}
-
-aside img {
-    width: 440px;
-    border-radius: 5%;
-}
-
-#img {
-    max-width: auto;
-    max-height: 362px;
-}
-
-.footer {
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 0.2;
-    align-items: center;
-}
-
-#imgFinal {
-    float: left;
-    max-height: 120px;
+    margin-top: 10px; /* Define uma margem superior de 10px */
+    padding: 10px 20px; /* Define o preenchimento interno do botão */
+    border-radius: 5px; /* Aplica bordas arredondadas de 5% ao botão */
+    background-color: #4CAF50; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão como branco */
+    text-align: center; /* Alinha o texto do botão ao centro */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    display: inline-block; /* Faz o botão se comportar como um bloco inline */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão */
 }
