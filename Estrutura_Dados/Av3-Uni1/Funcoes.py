@@ -23,9 +23,9 @@ def editar_funcionario(nome, cargo_novo, salario_novo):
         for linha in conteudo:
             dados = linha.replace('\n', '').split(";")
             if dados[0] == nome:
-                if cargo_novo is not None:
+                if cargo_novo != None:
                     dados[2] = cargo_novo
-                if salario_novo is not None:
+                if salario_novo != None:
                     dados[3] = salario_novo
                 arquivo.write(dados[0] + ";" + dados[1] + ";" + dados[2] + ";" + dados[3] + "\n")
             else:
