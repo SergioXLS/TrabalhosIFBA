@@ -10,10 +10,10 @@ while True:
     print("\n")
 
     if (opcao == 1):
-        nome = input("Nome do funcionario: ")
-        idade = input("Idade do funcionario: ")
-        cargo = input("Cargo do funcionario: ")
-        salario = input("Salário do funcionario: ")
+        nome = input("Nome do funcionário: ")
+        idade = input("Idade do funcionário: ")
+        cargo = input("Cargo do funcionário: ")
+        salario = input("Salário do funcionário: ")
         Funcoes.adicionar_funcionario(nome, idade, cargo, salario)
         print("\n")
         
@@ -22,7 +22,7 @@ while True:
         print("\n")
         
     elif (opcao == 3):
-        nome = input("Nome do funcionario que deseja alterar: ")
+        nome = input("Nome do funcionário que deseja alterar: ")
         print("1 - Alterar cargo")
         print("2 - Alterar salario")
         print("3 - Alterar ambos")
@@ -46,7 +46,7 @@ while True:
             break
         
     elif (opcao == 4):
-        nome = input("Nome do contato que deseja excluir: ")
+        nome = input("Nome do funcionário que deseja excluir: ")
         Funcoes.remover_funcionario(nome)
         print("\n")
     
