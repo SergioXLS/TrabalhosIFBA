@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do aluno</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h3 id="alunosTitulo">INFORMAÇÕES DOS ALUNOS</h3>
+    <fieldset>
+        <p id="infos">
+        Nome: <br>
+        CPF:  <br>
+        Data de Nascimento: <br>
+        Idade: <br>
+        Matricula: <br>
+        Serie/período: <br>
+        </p>
+    </fieldset>
+</body>
+</html>
