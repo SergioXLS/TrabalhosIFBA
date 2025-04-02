@@ -1,0 +1,41 @@
+.header{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.main{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer{
+  text-align: center;
+  font-family: arial;
+  
+}
+
+#main-sessão1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+#buttonForm{
+  padding: 10px 16px;
+  background-color: green;
+  border-radius: 4px;
+  color: aliceblue
+}
+
+#legenda{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px
+}
+
+#alunosTitulo{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+}
+
+#infos{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+}
