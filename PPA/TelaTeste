@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPARAÇÃO - IFBA</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <header class="header">
+    <img id="Logo" src="IMG/LOGO_HORIZONTAL.png" alt="logo do ifba na horizontal">
+    <h1>BUSCA DE DADOS VIA SUAP</h1>
+  </header>
+  <main class="main">
+    <form action="DadosAluno.html" method="get">
+      <fieldset>
+        <legend id="legenda">INFORME O CPF DO ALUNO</legend>
+        <section id="main-sessão1">
+          <span>CPF: </span>
+          <input type="text">
+            <button type="submit" id="buttonForm">BUSCAR</button>
+        </section>
+      </fieldset>
+    </form>
+  </main>
+  <footer class="footer">
+      <h5>IFBA - 2025</h5>
+  </footer>
+</body>
+</html>
