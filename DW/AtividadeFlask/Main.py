@@ -43,7 +43,7 @@ def livros():
         {"id": 4, "titulo": "O Príncipe", "ano": 1532, "autor": "Nicolau Maquíavel"},
         ]
         
-    livros_html = "<h2>Lista de Livros</h2><ul>"
+    livros_html = "<h2>Lista de Livros</h2> <hr> <ul>"
     
     for livro in livros:
         livros_html += f'''
@@ -76,7 +76,7 @@ def livros():
                 <a href="/sobre">Sobre</a>
             </nav>
                 
-            <div class="Main">
+            <div class="Main">            
                 {livros_html}
             </div>
         </body>
@@ -84,7 +84,7 @@ def livros():
     '''
     
 @app.route("/carrinho")
-def aluguel():
+def carrinho():
     return '''
     <!DOCTYPE html>
     <html>
@@ -92,10 +92,11 @@ def aluguel():
             <title>Carrinho</title>
             <style>
                 body { background-color: white; font-family: Arial; margin: 20px; padding: 5px; }
-                .Main { margin: 0 auto; padding: 10px; }
+                .Main { margin: 0 auto; padding: 10px; font-weight: bold; font-size: 30px; text-align: center; }
                 button { background-color: green; color: black; padding: 15px 24px; border-radius: 4px; }
                 nav { text-align: right; margin-bottom: 20px; }
                 nav a { padding: 5px; margin-right: 2px; }
+                .form { font-size: 25px; text-align: left; padding: 20px 0px; }
             </style>
         </head>
         <body>
@@ -108,8 +109,26 @@ def aluguel():
             
             <div class="Main">
                 <h1>Carrinho</h1>
-                <form>
-
+                <hr>
+                <form class="form">
+                    <span>1984</span>
+                    <input type="checkbox" name="livros" id="1984">
+                    <span>O Senhor dos Anéis</span>
+                    <input type="checkbox" name="livros" id="O Senhor dos Anéis">
+                    <span>Dom Casmurro</span>
+                    <input type="checkbox" name="livros" id="Dom Casmurro">
+                    <span>O Príncipe</span>
+                    <input type="checkbox" name="livros" id="O Príncipe">
+                    <br>
+                    
+                    <p>Deseja alugar ou comprar: </p>
+                        <select>
+                            <option value="comprar">Comprar</option>
+                            <option value="alugar">Alugar</option>
+                        </select>
+                    <br>
+                    
+                    <button type="submit">Finalizar</button>
                 </form>
             </div>
         </body>
