@@ -97,6 +97,7 @@ def carrinho():
                 nav { text-align: right; margin-bottom: 20px; }
                 nav a { padding: 5px; margin-right: 2px; }
                 .form { font-size: 25px; text-align: left; padding: 20px 0px; }
+                #comprar-alugar { margin: 0px 0px 30px 0px; padding: 10px 20px; }
             </style>
         </head>
         <body>
@@ -121,12 +122,15 @@ def carrinho():
                     <input type="checkbox" name="livros" id="O Príncipe">
                     <br>
                     
-                    <p>Deseja alugar ou comprar: </p>
-                        <select>
+                    <div>
+                        <p>Deseja alugar ou comprar: </p>
+                        <select id="comprar-alugar">
                             <option value="comprar">Comprar</option>
                             <option value="alugar">Alugar</option>
                         </select>
-                    <br>
+                        <br>
+                    </div>
+                    
                     
                     <button type="submit">Finalizar</button>
                 </form>
@@ -143,8 +147,13 @@ def sobre():
         <head>
             <title>Sobre</title>            
             <style>
-                body { background-color: ; font-family: Arial; margin: 20px; padding: 5px; }
-                .Main { margin: 0 auto; padding: 10px; }
+                body { background-color: white; font-family: Arial; margin: 20px; padding: 5px; }
+                .Main { margin: 0 auto; padding: 80px; text-align: center;}
+                nav { text-align: right; margin-bottom: 20px; }
+                nav a { padding: 5px; margin-right: 2px; }
+                h1 { font-size: 40px; font-family: Helvetica; }
+                h2 { font-size: 30px; }
+                h3 { font-size: 25px; }
             </style>
         </head>
         <body>
@@ -156,10 +165,10 @@ def sobre():
             </nav>
             
             <div class="Main">
-                <h2>Sobre</h2>
-                <h3>Biblioteca Virtual</h3>
-                <h3>Desenvolvido por: Sérgio</h3>
-                <h4>IFBA - 2025</h4>
+                <h1>Biblioteca Virtual</h1>
+                <hr>
+                <h2>Desenvolvido por: Sérgio</h2>
+                <h3>IFBA - 2025</h3>
             </div>
         </body>
     </html>
